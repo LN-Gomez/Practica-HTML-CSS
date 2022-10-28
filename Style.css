@@ -40,7 +40,7 @@ body {
     border-radius: 1%;
     background-position: top;
     background-size: 20px;
-    background: rgb(196,179,219);
+
     background: linear-gradient(rgba(196,179,219,0.30) 50%, rgba(255,255,255,0) 100%);
 }
 .list {
@@ -64,6 +64,7 @@ body {
     height: 100%;
     display:flex;
     width: auto;
+    margin: none;
 
 
 }
@@ -192,27 +193,102 @@ body {
 
 /*Termina sector de showcase */
 
+/* Empezando sector 3 fotos */
+
 .services {
-    display: block;
-
-
-}
-
-
-
-
-.serv-img-prop {
-    margin: 100px 5% 100px 5%;
-    padding-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 5px solid gray;
+    justify-content: center;
+    position: relative;
+    padding-top: 200px;
+    height: 1000px;
+    background-image: linear-gradient(180deg, rgb(9, 55, 63), rgb(39, 16, 143), rgb(0, 0, 0));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
 }
+
+.nxt, .prev {
+    border: none;
+    position: absolute;
+    top: 50%;
+    background-color: #ffffff00;
+    z-index: 9;
+
+}
+
+.nxt img, .prev img {
+}
+
+.nxt:hover img, .prev:hover img {
+    scale: 1.5;
+    transition: 0.3s;
+    border: #cac7cf;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.prev {
+    right: 0;
+    margin-right: 50px;
+
+}
+
+.nxt {
+    left: 0;
+    margin-left: 50px;
+
+}
+.serv-block {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    border:rgba(8, 112, 172, 0.301) solid 5px;
+    margin: 50px 50px 0px 50px;
+}
+
+.serv-img {
+
+}
+
+.serv-text-block {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#serv-text-desc {
+
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    color: #FFFFD2;
+    text-align: center;
+    background-color: #584f4f34;
+    min-width: 400px;
+    max-width: 750px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 15px;
+}
+
+
+/* Terminando sector 3 fotos*/
+
+/* Empezando suscription sector */
 
 .subs {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 1000px;
+    background-image: url(services.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 
